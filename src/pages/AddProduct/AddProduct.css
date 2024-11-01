@@ -1,0 +1,121 @@
+/* تنسيق الحاوية الرئيسية */
+.add-product-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f4f8;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* عنوان إضافة منتج */
+.add-product-title {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+
+/* تنسيق النموذج */
+.add-product-form {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 550px;
+}
+
+/* مجموعة الحقول */
+.form-group {
+    margin-bottom: 25px;
+}
+
+/* تنسيق التسميات */
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+    color: #34495e;
+    font-weight: 600;
+}
+
+/* تنسيق الحقول النصية */
+.form-input, 
+.form-textarea {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #dfe6e9;
+    background-color: #f9f9f9;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+/* تأثير عند التركيز على الحقول */
+.form-input:focus, 
+.form-textarea:focus {
+    border-color: #2980b9;
+    background-color: #ecf0f1;
+    outline: none;
+}
+
+/* تنسيق حقل النص */
+.form-textarea {
+    height: 150px;
+    resize: none;
+}
+
+/* تنسيق معاينة الصورة */
+.image-preview {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.image-preview-img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+/* زر الإضافة */
+.submit-button {
+    width: 100%;
+    background-color: #3498db;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* تأثيرات على الزر عند التمرير */
+.submit-button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+.submit-button:active {
+    transform: translateY(0);
+}
+
+/* تصميم تفاعلي للأجهزة الصغيرة */
+@media (max-width: 768px) {
+    .add-product-form {
+        padding: 30px;
+    }
+
+    .submit-button {
+        padding: 12px;
+        font-size: 1.2rem;
+    }
+}
